@@ -30,7 +30,7 @@ NODE_ENV=development
 ```
 
 ## Development Workflow
-1. Backend runs on http://localhost:5000
+1. Backend runs on http://localhost:5001
 2. Frontend runs on http://localhost:3000
 3. Database file created automatically on first run
 
