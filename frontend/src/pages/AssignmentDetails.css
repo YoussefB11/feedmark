@@ -75,7 +75,7 @@
 .section-detail {
   background: white;
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -95,7 +95,7 @@
 }
 
 .section-marks {
-  background: #3498db;
+  background: #E43D12;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -164,7 +164,7 @@
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
@@ -175,33 +175,33 @@
 }
 
 .btn-export {
-  background: #3498db;
+  background: #EFB11D;
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .btn-export:hover {
-  background: #2980b9;
+  background: #d99d0f;
 }
 
 .btn-edit {
-  background: #f39c12;
+  background: #D6536D;
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .btn-edit:hover {
-  background: #e67e22;
+  background: #c1475e;
 }
 
 .empty-message {

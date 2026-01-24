@@ -10,11 +10,11 @@
 }
 
 .btn-create {
-  background: #3498db;
+  background: #E43D12;
   color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+  border-radius: 8px;
   font-weight: 600;
   transition: background 0.3s;
 }
@@ -42,7 +42,7 @@
 
 .assignment-card {
   background: white;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -67,7 +67,7 @@
 }
 
 .total-marks {
-  background: #3498db;
+  background: #E43D12;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;

@@ -13,7 +13,7 @@ body {
 
 .App {
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #EBE9E1;
 }
 
 .App-main {
@@ -25,7 +25,7 @@ body {
 .page {
   background: white;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -42,11 +42,12 @@ body {
 }
 
 .stat-card {
-  background: #3498db;
+  background: linear-gradient(135deg, #E43D12 0%, #D6536D 100%);
   color: white;
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(228, 61, 18, 0.2);
 }
 
 .stat-card h3 {
@@ -57,4 +58,16 @@ body {
 .stat-card p {
   margin: 0.5rem 0 0 0;
   font-size: 1.1rem;
+}
+
+button, .btn-primary, .btn-create, .btn-add, .btn-submit {
+  border-radius: 8px !important;
+}
+
+.btn-primary {
+  background: #E43D12;
+}
+
+.btn-primary:hover {
+  background: #c63410;
 }
