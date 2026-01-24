@@ -165,3 +165,13 @@
 .btn-primary:hover {
   background: #229954;
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover {
+  text-decoration: none;
+}

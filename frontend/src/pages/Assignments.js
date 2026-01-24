@@ -33,32 +33,36 @@ function Assignments() {
         <div className="assignments-grid">
           {assignments.map((assignment) => (
             <div key={assignment.id} className="assignment-card">
-              <div className="card-header">
-                <h3>{assignment.name}</h3>
-                <span className="total-marks">{assignment.totalMarks} marks</span>
-              </div>
-              
-              {assignment.description && (
-                <p className="card-description">{assignment.description}</p>
-              )}
-              
-              <div className="card-stats">
-                <div className="stat">
-                  <span className="stat-label">Sections:</span>
-                  <span className="stat-value">{assignment.sections.length}</span>
+              <Link to={`/assignments/${assignment.id}`} className="card-link">
+                <div className="card-header">
+                  <h3>{assignment.name}</h3>
+                  <span className="total-marks">{assignment.totalMarks} marks</span>
                 </div>
-                <div className="stat">
-                  <span className="stat-label">Criteria:</span>
-                  <span className="stat-value">{calculateTotalCriteria(assignment.sections)}</span>
+                
+                {assignment.description && (
+                  <p className="card-description">{assignment.description}</p>
+                )}
+                
+                <div className="card-stats">
+                  <div className="stat">
+                    <span className="stat-label">Sections:</span>
+                    <span className="stat-value">{assignment.sections.length}</span>
+                  </div>
+                  <div className="stat">
+                    <span className="stat-label">Criteria:</span>
+                    <span className="stat-value">{calculateTotalCriteria(assignment.sections)}</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               <div className="card-footer">
                 <span className="created-date">
                   Created: {new Date(assignment.createdAt).toLocaleDateString()}
                 </span>
                 <div className="card-actions">
-                  <button className="btn-view">View</button>
+                  <Link to={`/assignments/${assignment.id}`} className="btn-view">
+                    View
+                  </Link>
                   <button 
                     className="btn-delete"
                     onClick={() => handleDelete(assignment.id, assignment.name)}

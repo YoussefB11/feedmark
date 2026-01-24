@@ -3,6 +3,7 @@ import { AssignmentProvider } from './context/AssignmentContext';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Assignments from './pages/Assignments';
+import AssignmentDetails from './pages/AssignmentDetails';
 import CreateAssignment from './pages/CreateAssignment';
 import FeedbackLibrary from './pages/FeedbackLibrary';
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/assignments" element={<Assignments />} />
+              <Route path="/assignments/:id" element={<AssignmentDetails />} />
               <Route path="/create" element={<CreateAssignment />} />
               <Route path="/feedback" element={<FeedbackLibrary />} />
             </Routes>
