@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useFeedback } from '../context/FeedbackContext';
 import FeedbackForm from '../components/FeedbackForm';
 import './FeedbackLibrary.css';
+import PageTransition from '../components/PageTransition';
 
 function FeedbackLibrary() {
   const { feedbackComments, deleteFeedback } = useFeedback();
@@ -35,6 +36,7 @@ function FeedbackLibrary() {
   };
 
   return (
+  <PageTransition>
     <div className="page">
       <h1>Feedback Library</h1>
       <p>Create and manage reusable feedback comments for marking.</p>
@@ -102,6 +104,7 @@ function FeedbackLibrary() {
         </div>
       )}
     </div>
+    </PageTransition>
   );
 }
 

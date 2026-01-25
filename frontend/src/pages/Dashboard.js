@@ -1,5 +1,6 @@
 import { useAssignments } from '../context/AssignmentContext';
 import { Link } from 'react-router-dom';
+import PageTransition from '../components/PageTransition';
 
 function Dashboard() {
   const { assignments } = useAssignments();
@@ -11,6 +12,7 @@ function Dashboard() {
   }, 0);
 
   return (
+  <PageTransition>
     <div className="page">
       <h1>Dashboard</h1>
       <p>Welcome to FeedMark. Get started by creating an assignment or managing your feedback library.</p>
@@ -39,6 +41,7 @@ function Dashboard() {
         </div>
       )}
     </div>
+    </PageTransition>
   );
 }
 

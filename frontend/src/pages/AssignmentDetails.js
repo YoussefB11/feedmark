@@ -1,6 +1,7 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useAssignments } from '../context/AssignmentContext';
 import './AssignmentDetails.css';
+import PageTransition from '../components/PageTransition';
 
 function AssignmentDetails() {
   const { id } = useParams();
@@ -30,6 +31,7 @@ function AssignmentDetails() {
   );
 
   return (
+  <PageTransition>
     <div className="page">
       <div className="details-header">
         <div>
@@ -122,6 +124,7 @@ function AssignmentDetails() {
         <button className="btn-edit">Edit Assignment</button>
       </div>
     </div>
+    </PageTransition>
   );
 }
 

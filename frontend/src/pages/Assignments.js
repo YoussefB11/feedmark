@@ -1,6 +1,7 @@
 import { useAssignments } from '../context/AssignmentContext';
 import { Link } from 'react-router-dom';
 import './Assignments.css';
+import PageTransition from '../components/PageTransition';
 
 function Assignments() {
   const { assignments, deleteAssignment } = useAssignments();
@@ -16,6 +17,7 @@ function Assignments() {
   };
 
   return (
+  <PageTransition>
     <div className="page">
       <div className="page-header">
         <h1>Assignments</h1>
@@ -76,6 +78,7 @@ function Assignments() {
         </div>
       )}
     </div>
+    </PageTransition>
   );
 }
 
